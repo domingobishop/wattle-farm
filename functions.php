@@ -58,6 +58,18 @@ function my_add_excerpts_to_pages() {
     add_post_type_support( 'page', 'excerpt' );
 }
 
+function excerpt($limit) {
+    $excerpt = explode(' ', get_the_excerpt(), $limit);
+    if (count($excerpt)>=$limit) {
+        array_pop($excerpt);
+        $excerpt = implode(" ",$excerpt).'...';
+    } else {
+        $excerpt = implode(" ",$excerpt);
+    }
+    $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
+    return $excerpt;
+}
+
 function bc_widgets_init() {
     register_sidebar( array(
         'name' => 'Sidebar',

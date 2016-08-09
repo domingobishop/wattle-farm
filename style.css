@@ -98,7 +98,9 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
  * Nav
  * ----------------------------------------------------------------------------
  */
-
+.navbar {
+	min-height: 94px;
+}
 .navbar {
 	margin: 0;
 	font-family: 'Lora', serif;
@@ -115,6 +117,7 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	color: #e51b15;
 }
 .navbar-default a.navbar-brand {
+	padding: 0 0 8px 0;
     color: #e51b15;
 	text-transform: none;
 	font-family: 'Lora', serif;
@@ -158,12 +161,19 @@ footer ul {
  * ----------------------------------------------------------------------------
  */
 
+#main {
+	background: url("img/bg.jpg") #fff center center;
+	background-size: cover;
+}
+.feature-boxes {
+	margin-top: 420px;
+}
 .bc-banner {
 	position: relative;
 }
 .bc-banner::after {
 	content: "";
-	background: url("img/bg.jpg") #eee center center;
+	/*background: url("img/bg.jpg") #eee center center;*/
 	background-size: cover;
 	opacity: 0.2;
 	top: 0;
@@ -181,6 +191,7 @@ footer ul {
 	color: #e51b15;
 }
 .bc-box {
+	background-color: #fff;
 	border: 1px #ddd solid;
 	border-radius: 3px;
 	padding: 1em;

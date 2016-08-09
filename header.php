@@ -27,13 +27,13 @@
                     </button>
                     <a class="navbar-brand" href="<?php bloginfo('siteurl'); ?>/"
                        title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-                        Wattle Farm
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Crabtree" class="img-responsive">
                     </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <?php wp_nav_menu(array('menu' => 'Menu 1', 'items_wrap' => '<ul class="nav navbar-nav navbar-left" role="menu">%3$s</ul>', 'container' => false)); ?>
+                <div class="collapse navbar-collapse">
+                    <?php wp_nav_menu(array('menu' => 'Menu 1', 'items_wrap' => '<ul class="nav navbar-nav navbar-right" role="menu">%3$s</ul>', 'container' => false)); ?>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
@@ -45,7 +45,7 @@
                     <div class="col-xs-4 col-sm-2">
                         <a href="<?php bloginfo('siteurl'); ?>/"
                            title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Crabtree" class="img-responsive">
+
                         </a>
                     </div>
                 </div>
