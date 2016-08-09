@@ -17,18 +17,6 @@
 
 <body <?php body_class(); ?>>
     <header id="head" class="bc-head">
-        <div class="bc-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-4 col-sm-2">
-                        <a href="<?php bloginfo('siteurl'); ?>/"
-                           title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Crabtree" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <nav class="navbar navbar-default">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -51,5 +39,17 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
+        <div class="bc-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-2">
+                        <a href="<?php bloginfo('siteurl'); ?>/"
+                           title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Crabtree" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!-- #head -->
