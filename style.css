@@ -104,7 +104,6 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	font-family: 'Lora', serif;
 	font-weight: 400;
 	text-transform: uppercase;
-	font-weight: 500;
 	border-radius: 0;
 	background-color: #fff;
     box-shadow: 0px 5px 14px #ddd;
@@ -144,7 +143,7 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
  
 footer {
 	padding: 1em 0;
-	background: url("img/footer-bg.png") #eee right top no-repeat;
+	background-color: #eee;
 }
 footer .bc-info {
 	padding: 1em;
@@ -189,18 +188,6 @@ footer ul {
 	min-height: 240px;
 	margin-bottom: 1.6em;
 }
-.carousel {
-	margin: 1.6em 0;
-}
-.carousel .item img {
-	border-radius: 3px;
-}
-.carousel-caption h3 {
-	font-size: 200%;
-	font-weight: 700;
-	color: #fff;
-	text-shadow: 5px 5px 5px #222;
-}
 
 
 /**
@@ -211,31 +198,10 @@ footer ul {
 .bc-content {
     margin-bottom: 2em;
 }
-.category-wine .entry-thumbnail {
-	float: left;
-	margin: 0 3em 3em 0;
-}
-.category-wine .entry-thumbnail .btn-default {
-	width: 100%;
-	margin-top: 1em;
-}
 aside .textwidget {
 	border: 7px solid #eee;
 }
 
-/**
- * Wines
- * ----------------------------------------------------------------------------
- */
-
-.wines .entry-content {
-	height: 148px;
-	overflow: hidden;
-}
-
-.wines .entry-content h3 {
-	font-size: 1.4em;
-}
 .btn-default {
 	color: #95a5a6;
 	background-color: transparent;
@@ -243,9 +209,6 @@ aside .textwidget {
 }
 
 @media (max-width: 798px) {
-	.wines .entry-content h3 {
-		font-size: 1em;
-	}
 	.bc-box {
 		min-height: auto;
 	}

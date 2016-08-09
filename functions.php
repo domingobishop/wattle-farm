@@ -84,6 +84,6 @@ function add_categories_to_pages() {
 add_action( 'init', 'add_categories_to_pages' );
 
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'wine-thumbnail', 80, 295 ); // Soft Crop Mode
+
 
 
