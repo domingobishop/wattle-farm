@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: #222;
 }
 a {
-	color: #e51b15;
+	color: #7b7c2e;
 }
 a:hover, a:focus {
 	color: #000;
@@ -98,8 +98,8 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
  * Nav
  * ----------------------------------------------------------------------------
  */
-.navbar {
-	min-height: 94px;
+.navbar-header {
+	min-height: 90px;
 }
 .navbar {
 	margin: 0;
@@ -108,7 +108,7 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	text-transform: uppercase;
 	border-radius: 0;
 	background-color: #fff;
-    box-shadow: 0px 5px 14px #ddd;
+	box-shadow: 0px 5px 14px #444;
 }
 .navbar-default .navbar-nav > li > a {
     color: #222;
@@ -117,8 +117,9 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	color: #e51b15;
 }
 .navbar-default a.navbar-brand {
-	padding: 0 0 8px 0;
-    color: #e51b15;
+	margin: 0;
+	padding: 0;
+    color: #7b7c2e;
 	text-transform: none;
 	font-family: 'Lora', serif;
 	font-weight: 400;
@@ -128,6 +129,11 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 }
 .navbar-default .navbar-toggle {
 	background: #222;
+}
+@media (max-width: 480px) {
+	.navbar-header {
+		padding: 0 7px;
+	}
 }
 
 /**
@@ -145,6 +151,7 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
  */
  
 footer {
+	border-top: 3px solid #7b7c2e;
 	padding: 1em 0;
 	background-color: #eee;
 }
@@ -161,43 +168,25 @@ footer ul {
  * ----------------------------------------------------------------------------
  */
 
-#main {
+.home .bc-banner {
+	position: relative;
+	padding: 2em 0;
 	background: url("img/bg.jpg") #fff center center;
 	background-size: cover;
+	height: 540px;
 }
-.feature-boxes {
-	margin-top: 420px;
+.home-title {
+	background-color: #eee;
+	padding: 1em 0;
 }
-.bc-banner {
-	position: relative;
+.feature-panels {
+	padding: 1.6em 0;
 }
-.bc-banner::after {
-	content: "";
-	/*background: url("img/bg.jpg") #eee center center;*/
-	background-size: cover;
-	opacity: 0.2;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;
+.feature-panels h2 {
+	margin: 0;
 }
-.bc-banner img {
-	margin: 1em 0;
-}
-.tag-line p {
-	margin: 1em 0;
-	color: #e51b15;
-}
-.bc-box {
-	background-color: #fff;
-	border: 1px #ddd solid;
-	border-radius: 3px;
-	padding: 1em;
-	box-shadow: 0px 5px 14px #ddd;
-	min-height: 240px;
-	margin-bottom: 1.6em;
+.feature-panels:nth-child(even) {
+	background-color: #eee;
 }
 
 
@@ -216,28 +205,11 @@ aside .textwidget {
 .btn-default {
 	color: #95a5a6;
 	background-color: transparent;
-	border-color: #95a5a6;
+	border: solid 1px #95a5a6;
 }
 
 @media (max-width: 798px) {
-	.bc-box {
-		min-height: auto;
-	}
-	.nav>li>a {
-		padding: 10px 8px;
-	}
-	.navbar-brand {
-		display: none;
-	}
-	.navbar {
-		min-height: auto;
-	}
-}
 
-@media (max-width: 480px) {
-	.navbar-brand {
-		display: block;
-	}
 }
 
  /**
