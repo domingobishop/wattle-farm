@@ -30,7 +30,7 @@ html, button, input, select, textarea {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Lora', serif;
     font-weight: 400;
-	color: #222;
+	color: #7b7c2e;
 }
 a {
 	color: #7b7c2e;
@@ -102,12 +102,12 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	min-height: 90px;
 }
 .navbar {
+	background: url("img/header_bg.png") #fff top right no-repeat;
 	margin: 0;
 	font-family: 'Lora', serif;
 	font-weight: 400;
 	text-transform: uppercase;
 	border-radius: 0;
-	background-color: #fff;
 	box-shadow: 0px 5px 14px #444;
 }
 .navbar-default .navbar-nav > li > a {
@@ -171,16 +171,19 @@ footer ul {
 .home .bc-banner {
 	position: relative;
 	padding: 2em 0;
-	background: url("img/bg.jpg") #fff center center;
+	background: url("img/bg.jpg") #fff top center;
 	background-size: cover;
 	height: 540px;
 }
 .home-title {
-	background-color: #eee;
-	padding: 1em 0;
+	margin-top: 100px;
+}
+.home-title h1, .home-title h3 {
+	color: #fff;
+	text-shadow: 2px 2px 5px #444;
 }
 .feature-panels {
-	padding: 1.6em 0;
+	padding: 2em 0 3em;
 }
 .feature-panels h2 {
 	margin: 0;
@@ -203,9 +206,9 @@ aside .textwidget {
 }
 
 .btn-default {
-	color: #95a5a6;
-	background-color: transparent;
-	border: solid 1px #95a5a6;
+	color: #7b7c2e;
+	background-color: #fff;
+	border: solid 1px #7b7c2e;
 }
 
 @media (max-width: 798px) {
