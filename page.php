@@ -4,7 +4,7 @@
         <div id="content" class="bc-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <?php while (have_posts()) : the_post(); ?>
                             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                                 <div class="page-header">
@@ -18,7 +18,6 @@
                             </article>
                         <?php endwhile; ?>
                     </div>
-                    <?php get_sidebar(); ?>
                 </div>
             </div>
         </div>
