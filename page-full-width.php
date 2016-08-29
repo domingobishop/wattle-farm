@@ -12,11 +12,6 @@ get_header(); ?>
                     <div class="col-lg-12">
                         <?php while (have_posts()) : the_post(); ?>
                             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                                <?php if (has_post_thumbnail() && !post_password_required() && !is_attachment()) : ?>
-                                    <div class="entry-thumbnail">
-                                            <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
-                                    </div>
-                                <?php endif; ?>
                                 <div class="page-header">
                                     <h1>
                                         <?php the_title(); ?>

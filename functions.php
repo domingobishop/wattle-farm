@@ -4,7 +4,7 @@
 function bc_styles() {
     wp_register_style( 'bc-styles', get_template_directory_uri() . '/style.css', array(), 1.0, 'all' );
     wp_register_style( 'google-fonts',
-        'https://fonts.googleapis.com/css?family=Lora:400,700|Droid+Serif:400,700|Open+Sans:400,700,400italic', array(), 1.0, 'all' );
+        'https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans:400,700,400italic', array(), 1.0, 'all' );
     wp_enqueue_style( 'bc-styles' );
     wp_enqueue_style( 'google-fonts' );
 }
@@ -58,6 +58,18 @@ function my_add_excerpts_to_pages() {
     add_post_type_support( 'page', 'excerpt' );
 }
 
+function excerpt($limit) {
+    $excerpt = explode(' ', get_the_excerpt(), $limit);
+    if (count($excerpt)>=$limit) {
+        array_pop($excerpt);
+        $excerpt = implode(" ",$excerpt).'...';
+    } else {
+        $excerpt = implode(" ",$excerpt);
+    }
+    $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
+    return $excerpt;
+}
+
 function bc_widgets_init() {
     register_sidebar( array(
         'name' => 'Sidebar',
@@ -84,6 +96,6 @@ function add_categories_to_pages() {
 add_action( 'init', 'add_categories_to_pages' );
 
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'wine-thumbnail', 80, 295 ); // Soft Crop Mode
+
 
 
