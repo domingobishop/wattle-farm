@@ -105,6 +105,14 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 .navbar-header {
 	min-height: 90px;
 }
+.resize {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	min-height: 60px !important;
+	height: 60px !important;
+}
 .navbar {
 	background: url("img/header_bg.png") #fff top right no-repeat;
 	margin: 0;
